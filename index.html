@@ -1,10 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Chris Ski Atlas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Ski Atlas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fa;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0a4d7c, #1a7cbc);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.1);
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            color: #0a4d7c;
+        }
+
+        .coming-soon {
+            background: white;
+            margin-top: 30px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+        }
+
+        .emoji {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
+
 <body>
-	<h1>Chris's Ski Atlas</h1>
-	<p>My skiing adventures.</p>
+
+<header>
+    <h1>⛷️ Chris Ski Atlas</h1>
+    <p>Tracking ski adventures, photos, videos, and mountain memories.</p>
+</header>
+
+<div class="container">
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="emoji">🗺️</div>
+            <h2>Ski Maps</h2>
+            <p>Interactive resort maps built from Slopes GPS tracks.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📸</div>
+            <h2>Photos</h2>
+            <p>Georeferenced skiing photos linked to their exact locations.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🎥</div>
+            <h2>Insta360</h2>
+            <p>Immersive videos tied directly to runs and viewpoints.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📊</div>
+            <h2>Stats</h2>
+            <p>Vertical, speed, distance, and lifetime skiing analytics.</p>
+        </div>
+
+    </div>
+
+    <div class="coming-soon">
+        <h2>🚧 Project Roadmap</h2>
+        <br>
+
+        <p><strong>Phase 1:</strong> GitHub Pages Website ✅</p>
+        <br>
+
+        <p><strong>Phase 2:</strong> Add Mapbox Interactive Map</p>
+        <br>
+
+        <p><strong>Phase 3:</strong> Import First Slopes GPX Track</p>
+        <br>
+
+        <p><strong>Phase 4:</strong> Add Geotagged Insta360 Photos</p>
+        <br>
+
+        <p><strong>Phase 5:</strong> Multi-Year Ski Atlas</p>
+
+    </div>
+
+</div>
+
+<footer>
+    Chris Schweitzer • Ski Atlas Project
+</footer>
+
 </body>
 </html>
